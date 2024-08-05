@@ -1,6 +1,7 @@
 import React from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,14 +11,16 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="bg-transparent border-none outline-none"
+            className="bg-transparent border-none outline-none text-white placeholder:text-white"
           />
           <SearchOutlinedIcon />
         </div>
-        <button className="px-[15px] py-1 bg-transparent border border-[#3ea6ff] text-[#3ea6ff] rounded-sm flex items-center gap-1 font-medium cursor-pointer">
-          <AccountCircleIcon />
-          Sign In
-        </button>
+        <Link to="signin">
+          <button className="px-[15px] py-1 bg-transparent border border-[#3ea6ff] text-[#3ea6ff] rounded-sm flex items-center gap-1 font-medium cursor-pointer">
+            <AccountCircleIcon />
+            Sign In
+          </button>
+        </Link>
       </div>
     </div>
   );
