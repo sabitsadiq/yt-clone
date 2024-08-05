@@ -10,7 +10,7 @@ function App() {
         <Menu />
         <main className="flex-[7] bg-[#181818]">
           <Navbar />
-          <div>
+          <div className="w-11/12 mx-auto">
             <Routes>
               <Route path="/">
                 <Route index element={<Home />} />

@@ -18,7 +18,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const Menu = () => {
   return (
-    <div className="sticky top-0 flex-1 text-sm bg-[#202020] h-full min-h-screen text-white">
+    <div className="sticky top-0 flex-1 min-w-52 text-sm bg-[#202020] h-full min-h-screen text-white">
       <div className="py-5 px-[26px]">
         <div className="flex items-center gap-1 font-bold mb-6">
           <img src="" className="h-6" />
